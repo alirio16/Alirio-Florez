@@ -1,0 +1,85 @@
+* {
+
+
+nav a:hover {
+color: #00aaff;
+}
+
+
+.hero {
+height: 70vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 40px;
+background: radial-gradient(circle at center, #1a1a1a, #0b0b0b);
+}
+
+
+.hero h2 {
+font-size: 48px;
+margin-bottom: 10px;
+}
+
+
+.hero p {
+font-size: 20px;
+color: #cccccc;
+margin-bottom: 20px;
+}
+
+
+.section {
+padding: 60px 40px;
+max-width: 1200px;
+margin: auto;
+}
+
+
+.title {
+font-size: 32px;
+margin-bottom: 20px;
+color: #00aaff;
+text-transform: uppercase;
+}
+
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+}
+
+
+.card {
+background: #1a1a1a;
+padding: 20px;
+border-radius: 10px;
+border: 1px solid rgba(255,255,255,0.1);
+transition: 0.3s;
+}
+
+
+.card:hover {
+transform: translateY(-6px);
+border-color: #00aaff;
+}
+
+
+footer {
+text-align: center;
+padding: 20px;
+background: #111111;
+margin-top: 60px;
+color: #aaaaaa;
+}
+
+
+.social-links a {
+margin: 0 10px;
+color: #00aaff;
+font-size: 20px;
+text-decoration: none;
+}
