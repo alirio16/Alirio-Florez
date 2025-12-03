@@ -1,5 +1,5 @@
 /* ------------------------------------
-   ESTILO GENERAL
+   RESETEO
 ------------------------------------ */
 * {
     margin: 0;
@@ -8,9 +8,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* ------------------------------------
+   COLORES BASE
+------------------------------------ */
+:root {
+    --arena: #ECE2C6;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+/* ------------------------------------
+   BODY / FONDO
+------------------------------------ */
 body {
-    background: #0e0e0e;
-    color: #fff;
+    background: var(--arena);
+    color: var(--negro);
     line-height: 1.6;
 }
 
@@ -19,7 +31,7 @@ body {
 ------------------------------------ */
 header {
     width: 100%;
-    background: #000;
+    background: var(--negro);
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -30,13 +42,14 @@ header {
 }
 
 header h1 {
+    color: var(--blanco);
     font-size: 28px;
     font-weight: 600;
-    letter-spacing: 1px;
 }
 
+/* NAV */
 nav a {
-    color: #fff;
+    color: var(--blanco);
     margin-left: 25px;
     text-decoration: none;
     font-size: 16px;
@@ -45,38 +58,37 @@ nav a {
 }
 
 nav a:hover {
-    color: #00d4ff;
+    color: var(--arena);
 }
 
 /* ------------------------------------
-   HERO / PORTADA
+   HERO (SECCIÓN PRINCIPAL)
 ------------------------------------ */
 .hero {
-    height: 90vh;
+    height: 80vh;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url('https://wallpaperaccess.com/full/2637581.jpg');
-    background-size: cover;
-    background-position: center;
+    background: var(--negro);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 20px;
+    border-bottom: 8px solid var(--arena);
 }
 
 .hero h2 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 700;
-    margin-bottom: 15px;
+    color: var(--blanco);
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 20px;
-    width: 70%;
-    max-width: 800px;
-    opacity: 0.85;
+    max-width: 700px;
+    color: var(--blanco);
+    opacity: 0.9;
 }
 
 /* ------------------------------------
@@ -84,34 +96,40 @@ nav a:hover {
 ------------------------------------ */
 section {
     padding: 70px 40px;
+    text-align: center;
 }
 
 section h3 {
-    font-size: 35px;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--negro);
+    margin-bottom: 15px;
+    border-bottom: 3px solid var(--negro);
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 section p {
-    text-align: center;
+    font-size: 18px;
     max-width: 900px;
     margin: auto;
-    opacity: 0.85;
+    color: var(--negro);
+    opacity: 0.9;
 }
 
 /* ------------------------------------
    FOOTER
 ------------------------------------ */
 footer {
-    background: #000;
+    background: var(--negro);
     padding: 20px;
     text-align: center;
-    color: #aaa;
+    color: var(--blanco);
     margin-top: 40px;
 }
 
 footer a {
-    color: #00d4ff;
+    color: var(--arena);
     text-decoration: none;
 }
 
@@ -128,21 +146,13 @@ footer a:hover {
         gap: 10px;
     }
 
-    nav a {
-        margin-left: 10px;
-    }
-
     .hero h2 {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .hero p {
         width: 95%;
         font-size: 18px;
-    }
-
-    section {
-        padding: 50px 20px;
     }
 }
 
